@@ -1,8 +1,32 @@
 * {
-    background: #204d67;
-    width: 1200px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.title {
+body {
+    background: #204d67;
+    font-family: 'Titillium Web', sans-serif;
+}
+nav {
+    height: 50px;
+    background-color: #dadede;
     text-align: center;
-    color: antiquewhite;
+    line-height: 50px;
+}
+nav li{
+    display: inline-block;
+    /*background-color: bisque;*/
+}
+nav li a{
+    padding: 0 50px;
+    color: #204d67;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+    transition: color .9s;
+}
+nav li a:hover{
+    color: tomato;
 }

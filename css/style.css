@@ -13,11 +13,11 @@ nav {
     text-align: center;
     line-height: 50px;
 }
-nav li{
+nav li {
     display: inline-block;
     /*background-color: bisque;*/
 }
-nav li a{
+nav li a {
     padding: 0 50px;
     color: #204d67;
     text-decoration: none;
@@ -27,6 +27,28 @@ nav li a{
     font-size: 16px;
     transition: color .9s;
 }
-nav li a:hover{
+nav li a:hover {
     color: tomato;
+}
+/* HEADER */
+.header-img {
+    position: relative;
+    height: 260px;
+    background-image: url("../img/header-bkg.jpg");
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+}
+.header-text {
+    position: absolute;
+    text-shadow: 40px 10px 6px burlywood;
+    color: #b5b5b5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-bg {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+
 }

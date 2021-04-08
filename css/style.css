@@ -25,10 +25,11 @@ nav li a {
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 16px;
-    transition: color .9s;
+    transition: text-shadow .9s;
 }
 nav li a:hover {
-    color: tomato;
+    /*color: #06007a;*/
+    text-shadow: 5px 5px 10px #030c5f;
 }
 /* HEADER */
 .header-img {
@@ -40,7 +41,7 @@ nav li a:hover {
 }
 .header-text {
     position: absolute;
-    text-shadow: 40px 10px 6px burlywood;
+    text-shadow: 5px 5px 5px #030e3c;
     color: #b5b5b5;
     top: 50%;
     left: 50%;

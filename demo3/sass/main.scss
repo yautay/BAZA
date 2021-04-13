@@ -1,3 +1,6 @@
+@import "bckg-gradients", "colors";
+
+
 *,
 *::before,
 *::after {
@@ -9,5 +12,102 @@
 body {
   position: relative;
   font-family: 'Roboto', sans-serif;
-  background-color: dimgray;
+  background-color: $bckg-solid;
+  font-size: 10px;
 }
+// NAV
+nav {
+  text-transform: uppercase;
+  background-color: $nav-bckg;
+  font-size: 1.1rem;
+  a,
+  button {
+    color: $nav-text;
+  }
+  a:hover {
+    color: $nav-text-hover;
+  }
+  .active {
+    color: $nav-text-hover;
+  }
+  .navbar-brand {
+    font-weight: bolder;
+    :first-child{
+      margin-right: 5px;
+    }
+  }
+  .fa-bars {
+    padding: 10px;
+  }
+}
+// HEADER
+header {
+  color: $text-contrast;
+  h1 {
+    text-transform: uppercase;
+  }
+  .hero-container {
+    position: relative;
+    height: 100vh;
+    .hero-img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url("../img/wood-800.jpg");
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      filter: grayscale(70%);
+      z-index: -10;
+    }
+    .hero-shadow {
+      position: absolute;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, .3);
+      z-index: -2;
+    }
+    .hero-text {
+      h1 {
+        font-size: 3.5rem;
+        text-align: center;
+      }
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $text-contrast;
+      font-size: 1.5rem;
+      text-shadow: 1px 4px 3px $text-shadow;
+      z-index: 5;
+      .baza-text {
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 5rem;
+        font-weight: bolder;
+        letter-spacing: 10px;
+        text-shadow: none;
+      }
+    }
+  }
+}
+@media (min-width: 800px) {
+  header {
+    .hero-container {
+      .hero-img {
+        background-image: url("../img/wood-1200.jpg");
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    .hero-container {
+      .hero-img {
+        background-image: url("../img/wood-3000.jpg");
+      }
+    }
+  }
+}
+// MAIN

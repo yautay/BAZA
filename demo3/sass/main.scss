@@ -111,3 +111,27 @@ header {
   }
 }
 // MAIN
+
+.motto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+  height: 40vh;
+  width: 80vw;
+  .motto-item {
+    width: 24%;
+    flex: 0 1 auto;
+    margin: 5px;
+    background-color: #5f1d03;
+    height: 100%;
+  }
+}
+
+//FOOTER
+footer {
+  height: 150px;
+  background-color: #563d21;
+}

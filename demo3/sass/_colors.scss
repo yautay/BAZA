@@ -1,8 +1,9 @@
-$bckg-solid: rgb(255, 255, 255);
+$bckg-solid: rgb(255, 249, 244);
 
 $nav-text: #535353;
 $nav-text-hover: rgba($nav-text, 0.6);
-$nav-bckg: rgba(255, 242, 226, 0.49);
+$nav-bckg: rgba($bckg-solid, 0.6);
+$nav-bckg-solid: rgba($bckg-solid, 0.95);
 
 $text-contrast: #f3f3f3;
 $text-shadow: #0c0c0c;

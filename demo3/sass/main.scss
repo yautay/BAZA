@@ -16,10 +16,16 @@ body {
   font-size: 10px;
 }
 // NAV
+.shaddow-bg,
+.shaddow-bg-hamburger{
+  background-color: $nav-bckg-solid;
+}
 nav {
   text-transform: uppercase;
   background-color: $nav-bckg;
+  transition: background-color .5s;
   font-size: 1.1rem;
+  z-index: 100;
   a,
   button {
     color: $nav-text;
@@ -68,7 +74,10 @@ header {
     }
     .hero-text {
       h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
+        text-align: center;
+      }
+      p {
         text-align: center;
       }
       height: 100%;
@@ -84,11 +93,27 @@ header {
         background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
         -webkit-background-clip: text;
         color: transparent;
-        font-size: 5rem;
+        font-size: 4.5rem;
         font-weight: bolder;
         letter-spacing: 10px;
         text-shadow: none;
       }
+      .btn-outline-light {
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2px $text-shadow;
+      }
+    }
+    .fa-chevron-down {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 3rem;
+      color: $text-contrast;
+      z-index: 50;
+    }
+    .fa-chevron-down:hover {
+      text-shadow: 5px 10px 20px $text-shadow;
     }
   }
 }
@@ -106,6 +131,17 @@ header {
     .hero-container {
       .hero-img {
         background-image: url("../img/wood-3000.jpg");
+      }
+      .hero-text{
+        h1 {
+          font-size: 5rem;
+          .baza-text {
+            font-size: 7rem;
+          }
+        }
+        p {
+          font-size: 3rem;
+        }
       }
     }
   }

@@ -10,42 +10,49 @@
   stroke:none
 }
 
-#sky {
-  fill: #31fd00;
-}
+#sky,
 #grass {
-  fill: chartreuse;
+  fill: rgba(0, 0, 0, 0);
 }
 #border {
-  fill: #ffa200;
+  fill: #966c3b;
 }
-#undertext {
-  fill: #e50000;
+#undertext,
+#baza {
+  fill: #765332;
 }
 #windows {
-  fill: #f3c0ab;
+  fill: #ececec;
+  #win-1 {
+    fill: #fcd1d1;
+  }
+  #win-2 {
+    fill: #aee1e1;
+  }
+  #win-3 {
+    fill: #f8f1f1;
+  }
+  #win-4 {
+    fill: #fdffbc;
+  }
 }
-#wall {
-  fill: #358224;
+#wall,
+#chimney {
+  fill: #d0af84;
 }
-#frames {
-  fill: #ff0000;
+#frames,
+#door_frame {
+  fill: #966c3b;
 }
 #door {
-  fill: #0090ff;
+  fill: #ff8303;
 }
 #handle {
   fill: #000000;
 }
-#chimney {
-  fill: #5f1d03;
-}
 #roof {
-  fill: #00ffc7;
+  fill: #ffcc29;
 }
 #swirl {
-  fill: white;
-}
-#baza {
-  fill: #204d67;
+  fill: #81b214;
 }

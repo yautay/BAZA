@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  clip-rule:nonzero;
+  fill-opacity:1;
+  fill-rule:nonzero;
+  stroke:none
+}
+
+#sky {
+  fill: #31fd00;
+}
+#grass {
+  fill: chartreuse;
+}
+#border {
+  fill: #ffa200;
+}
+#undertext {
+  fill: #e50000;
+}
+#windows {
+  fill: #f3c0ab;
+}
+#wall {
+  fill: #358224;
+}
+#frames {
+  fill: #ff0000;
+}
+#door {
+  fill: #0090ff;
+}
+#handle {
+  fill: #000000;
+}
+#chimney {
+  fill: #5f1d03;
+}
+#roof {
+  fill: #00ffc7;
+}
+#swirl {
+  fill: white;
+}
+#baza {
+  fill: #204d67;
+}

@@ -14,93 +14,101 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <div class="hero-img paralax"></div>
-    <div class="hero-shadow"></div>
-
+    <div class="bg">
+        <div class="hero-img"></div>
+        <div class="hero-shadow"></div>
+    </div>
     <nav id="navbar" class="navbar navbar-expand-lg top-0 position-fixed w-100">
-    <div class="container-lg">
-        <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#">baza</a>
-                <a class="nav-link" href="">aktualności</a>
-                <a class="nav-link" href="">kim jesteśmy</a>
-                <a class="nav-link" href="">zajęcia</a>
-                <a class="nav-link" href="">projekty</a>
-                <a class="nav-link" href="">kalendarz</a>
-                <a class="nav-link" href="">kontakt</a>
+        <div class="container-lg">
+            <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#">baza</a>
+                    <a class="nav-link" href="">aktualności</a>
+                    <a class="nav-link" href="">kim jesteśmy</a>
+<!--                TODO do wdrożenia we właściwym czasie...-->
+<!--                <a class="nav-link" href="">zajęcia</a>-->
+<!--                <a class="nav-link" href="">projekty</a>-->
+<!--                <a class="nav-link" href="">kalendarz</a>-->
+                    <a class="nav-link" href="">kontakt</a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
-
+    </nav>
     <header>
-    <div class="hero-container">
-
-        <div class="hero-text">
-            <h1>witajcie w <span class="baza-text">bazie</span></h1>
-            <p>Miejscu kreatywnych spotkań</p>
-            <a href="#sponsors" type="button" class="btn btn-outline-light">nasi mecenasi</a>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>witajcie w <span class="baza-text">bazie</span></h1>
+                <p>Miejscu kreatywnych spotkań</p>
+                <a href="#sponsors" type="button" class="btn btn-outline-light">nasi mecenasi</a>
+            </div>
+            <a href="#motto">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
-        <a href="#motto">
-            <i class="fas fa-chevron-down"></i>
-        </a>
-
-    </div>
-</header>
+    </header>
     <main>
-    <section id="motto" class="bg-transparent">
-        <div class="container-fluid">
-            <div class="row motto-row">
-                <div class="motto box1 col-xxl-3 text-center">
-                    <p class="motto-title">b</p>
-                    <p class="motto-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, numquam.</p>
-                </div>
-                <div class="motto box2 col-xxl-3 text-center">
-                    <p class="motto-title">a</p>
-                    <p class="motto-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, numquam.</p>
-                </div>
-                <div class="motto box3 col-xxl-3 text-center">
-                    <p class="motto-title">z</p>
-                    <p class="motto-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, numquam.</p>
-                </div>
-                <div class="motto box4 col-xxl-3 text-center">
-                    <p class="motto-title">a</p>
-                    <p class="motto-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, numquam.</p>
+        <section id="motto" class="bg-transparent">
+            <div class="container-fluid">
+                <div class="row motto-row">
+                    <div class="motto col-xxl-3 text-center">
+                        <div class="motto-bg-image motto-bg-image-box1">
+                            <div class="motto-bg-shadow"></div>
+                            <p class="motto-title box1">b</p>
+                            <p class="motto-desc box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, numquam.</p>
+                        </div>
+
+                    </div>
+                    <div class="motto box2 col-xxl-3 text-center">
+                        <p class="motto-title">a</p>
+                        <p class="motto-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, numquam.</p>
+                    </div>
+                    <div class="motto box3 col-xxl-3 text-center">
+                        <p class="motto-title">z</p>
+                        <p class="motto-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, numquam.</p>
+                    </div>
+                    <div class="motto box4 col-xxl-3 text-center">
+                        <p class="motto-title">a</p>
+                        <p class="motto-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, numquam.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="sponsors" class="mt-5 mb-5 bg-transparent">
-        <div class="container-fluid">
-            <div class="row sponsors-row justify-content-md-center">
-                <div class="sponsors box1 col-md-6 col-xxl-3 text-center">
-                    <p class="sponsor-title">sponsor_1</p>
-                    <p class="sponsor-desc">Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="sponsors box2 col-md-6 col-xxl-3 text-center">
-                    <p class="sponsor-title">sponsor_2</p>
-                    <p class="sponsor-desc">Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="sponsors box3 col-md-6 col-xxl-3 text-center">
-                    <p class="sponsor-title">sponsor_3</p>
-                    <p class="sponsor-desc">Lorem ipsum dolor sit amet.</p>
+        </section>
+        <section id="sponsors" class="mt-5 mb-5 bg-transparent">
+            <div class="container-fluid">
+                <div class="row sponsors-row justify-content-md-center">
+<!--                    Urząd Gminy Rokietnica-->
+                    <div class="sponsors box1 col-md-6 col-xxl-3 text-center">
+                        <div>
+                            <a href="mailto: urzad@rokietnica.pl">
+                                <div class="logo"><img src="./img/gr_herb.png" alt="herb gminy Rokietnica"></div>
+                                <p>urząd gminy rokietnica
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+<!--                    SZP-Cerekwica-->
+                    <div class="sponsors box2 col-md-6 col-xxl-3 text-center">
+                        <p class="sponsor-title">sponsor_2</p>
+                        <p class="sponsor-desc">Lorem ipsum dolor sit amet.</p>
+                    </div>
+<!--                    ??????-->
+                    <div class="sponsors box3 col-md-6 col-xxl-3 text-center">
+                        <p class="sponsor-title">sponsor_3</p>
+                        <p class="sponsor-desc">Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-</main>
-
+        </section>
+    </main>
     <footer>
-    <div>
-        <p>footer</p>
-    </div>
-</footer>
-
+        <div class="container-fluid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum facere fuga sunt. Consectetur corporis ea possimus. Asperiores, doloremque dolorum est fugit iure nesciunt nihil, nulla obcaecati omnis pariatur reiciendis rerum, temporibus voluptate? Autem commodi doloribus eaque facere facilis nemo officia optio quo reprehenderit. Alias commodi consectetur labore qui soluta. Beatae cum dolor enim expedita fuga id illo illum laborum odit optio placeat possimus, provident quia quisquam rerum, sapiente similique sint tempore! Amet blanditiis distinctio, dolor dolorem eaque earum et facilis ipsa molestias officia quo ratione temporibus veritatis voluptatem voluptatum. Animi dolore ducimus explicabo illo inventore laboriosam nemo tempore totam, ut?</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/menu_mob.js"></script>

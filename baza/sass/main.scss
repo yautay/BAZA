@@ -79,47 +79,18 @@ nav {
 
 // HEADER
 header {
-  color: $text-contrast;
-  h1 {
-    text-transform: uppercase;
-  }
   .hero-container {
     position: relative;
     height: 100vh;
-    .hero-text {
-      h1 {
-        font-size: 3rem;
-        text-align: center;
-      }
-      p {
-        text-align: center;
-      }
+    .baza-logo {
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: $text-contrast;
-      font-size: 1.5rem;
-      text-shadow: 1px 4px 3px $text-shadow;
-      z-index: 5;
-      .baza-text {
-        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-size: 4.5rem;
-        font-weight: bolder;
-        letter-spacing: 10px;
-        text-shadow: none;
-      }
-      .btn-outline-light {
-        text-transform: uppercase;
-        text-shadow: 1px 1px 2px $text-shadow;
+      svg {
+        transform: scale(1.5);
       }
     }
     .fa-chevron-down {
       position: absolute;
-      bottom: 50px;
+      bottom: 25px;
       left: 50%;
       transform: translateX(-50%);
       font-size: 3rem;
@@ -130,22 +101,20 @@ header {
     .fa-chevron-down:hover {
       text-shadow: 3px 4px 4px black;
     }
-    @media (min-width: 992px) {
-      .hero-text{
-        h1 {
-          font-size: 5rem;
-          .baza-text {
-            font-size: 7rem;
-          }
-        }
-        p {
-          font-size: 3rem;
+  }
+}
+@media (max-width: 1400px) {
+  header {
+    .hero-container {
+      .baza-logo {
+        height: 100%;
+        svg {
+          transform: scale(1.2);
         }
       }
     }
   }
 }
-
 // MAIN
   // MOTTO
 .motto {

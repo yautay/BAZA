@@ -1,58 +1,55 @@
-*,
-*::before,
-*::after {
+.baza-logo {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   clip-rule:nonzero;
   fill-opacity:1;
   fill-rule:nonzero;
-  stroke:none
-}
-
-#sky,
-#grass {
-  fill: rgba(0, 0, 0, 0);
-}
-#border {
-  fill: #966c3b;
-}
-#undertext,
-#baza {
-  fill: #765332;
-}
-#windows {
-  fill: #ececec;
-  #win-1 {
-    fill: #fcd1d1;
+  stroke:none;
+  #sky,
+  #grass {
+    fill: rgba(0, 0, 0, 0);
   }
-  #win-2 {
-    fill: #aee1e1;
+  #border {
+    fill: #966c3b;
   }
-  #win-3 {
-    fill: #f8f1f1;
+  #undertext,
+  #baza {
+    fill: #765332;
   }
-  #win-4 {
-    fill: #fdffbc;
+  #windows {
+    fill: #ececec;
+    #win-1 {
+      fill: #fcd1d1;
+    }
+    #win-2 {
+      fill: #aee1e1;
+    }
+    #win-3 {
+      fill: #f8f1f1;
+    }
+    #win-4 {
+      fill: #fdffbc;
+    }
   }
-}
-#wall,
-#chimney {
-  fill: #d0af84;
-}
-#frames,
-#door_frame {
-  fill: #966c3b;
-}
-#door {
-  fill: #ff8303;
-}
-#handle {
-  fill: #000000;
-}
-#roof {
-  fill: #ffcc29;
-}
-#swirl {
-  fill: #81b214;
+  #wall,
+  #chimney {
+    fill: #d0af84;
+  }
+  #frames,
+  #door_frame {
+    fill: #966c3b;
+  }
+  #door {
+    fill: #ff8303;
+  }
+  #handle {
+    fill: #000000;
+  }
+  #roof {
+    fill: #ffcc29;
+  }
+  #swirl {
+    fill: #81b214;
+  }
 }

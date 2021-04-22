@@ -23,8 +23,15 @@ body .bg::before {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  filter: grayscale(30%) brightness(180%) contrast(105%);
+  filter: grayscale(80%) brightness(180%) contrast(105%);
   z-index: -10;
+}
+body .bg .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: -2;
 }
 @media (min-width: 768px) {
   body .bg::before {
@@ -36,17 +43,11 @@ body .bg::before {
     background-image: url("../img/wood-3000.jpg");
   }
 }
-body .bg .hero-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: -2;
-}
+
 
 // NAV
-.shaddow-bg,
-.shaddow-bg-hamburger{
+.shadow-bg,
+.shadow-bg-hamburger{
   background-color: $nav-bckg-solid;
 }
 nav {
@@ -123,10 +124,11 @@ header {
       transform: translateX(-50%);
       font-size: 3rem;
       color: $text-contrast;
+      text-shadow: 2px 3px 3px $text-shadow;
       z-index: 50;
     }
     .fa-chevron-down:hover {
-      text-shadow: 5px 10px 20px $text-shadow;
+      text-shadow: 3px 4px 4px black;
     }
     @media (min-width: 992px) {
       .hero-text{
@@ -148,16 +150,15 @@ header {
   // MOTTO
 .motto {
   height: 400px;
-  background-repeat: no-repeat;
   padding: 6px;
-
   .motto-box{
     position: relative;
     width: 100%;
     height: 100%;
     padding: 0;
     border-radius: 25px;
-    filter: brightness(120%) contrast(110%) grayscale(80%);
+    background-repeat: no-repeat;
+    filter: brightness(120%) contrast(110%) grayscale(95%);
     transition: filter .6s;
     .motto-text {
       position: absolute;
@@ -165,12 +166,21 @@ header {
       text-transform: capitalize;
       text-align: center;
       text-shadow: 6px 5px 7px $text-shadow;
+      transition: text-shadow .6s;
       filter: none;
       .motto-title {
         font-size: 4rem;
+        font-weight: bold;
+      }
+      .motto-word {
+        text-transform: uppercase;
+        font-size: 1.75rem;
+        font-weight: bolder;
       }
       .motto-desc {
-        font-size: 2rem;
+        padding: 15px;
+        text-transform: none;
+        font-size: 1.25rem;
       }
     }
     .motto-bg {
@@ -181,6 +191,9 @@ header {
   }
   .motto-box:hover {
     filter: brightness(120%) contrast(110%) grayscale(20%);
+    .motto-text {
+      text-shadow: 6px 5px 5px black;
+    }
   }
 }
 .first-motto {
@@ -190,7 +203,6 @@ header {
 .second-motto {
   background-image: url("../img/akceptacja-1500.jpg");
   background-position: 78% 44%;
-
 }
 .third-motto {
   background-image: url("../img/zaangazowanie-1500.jpg");
@@ -199,6 +211,45 @@ header {
 .fourth-motto {
   background-image: url("../img/artyzm-1500.jpg");
   background-position: 9% 35%;
+}
+@media (min-width: 1400px) {
+  .motto {
+    .motto-box{
+      .motto-text {
+        .motto-title {
+          margin-bottom: 15%;
+          font-size: 5rem;
+        }
+        .motto-word {
+          margin-bottom: 0;
+          font-size: 1.75rem;
+        }
+        .motto-desc {
+          padding: 15px;
+        }
+      }
+    }
+  }
+  .first-motto {
+    background-image: url("../img/bliskosc-1900.jpg");
+    background-position: 72% 57%;
+    background-size: 195%;
+  }
+  .second-motto {
+    background-image: url("../img/akceptacja-1900.jpg");
+    background-position: 57% 20%;
+    background-size: 195%;
+  }
+  .third-motto {
+    background-image: url("../img/zaangazowanie-1900.jpg");
+    background-position: 68% 15%;
+    background-size: 195%;
+  }
+  .fourth-motto {
+    background-image: url("../img/artyzm-1900.jpg");
+    background-position: 53% 36%;
+    background-size: 225%;
+  }
 }
   // SPONSORS
 .sponsors-row {
@@ -210,7 +261,7 @@ header {
     text-decoration: none;
     .logo {
       img {
-        height: 150px;
+        height: 100px;
         filter: grayscale(75%);
         transition: filter .5s;
       }
@@ -218,8 +269,8 @@ header {
     p {
       padding-top: 20px;
       font-size: 1rem;
-      color: $text-dark-contrast;
-      text-shadow: 0px 0px 1px $text-dark-contrast-shadow;
+      color: black;
+      text-shadow: 2px 2px 3px whitesmoke;
       text-transform: uppercase;
       transition: .5s;
     }
@@ -232,7 +283,7 @@ header {
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: bolder;
     }
   }
@@ -247,6 +298,7 @@ header {
   .motto-row,
   .sponsors-row {
     margin: 0 50px 0 50px;
+    min-height: 300px;
   }
 }
 

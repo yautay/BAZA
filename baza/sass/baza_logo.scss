@@ -1,3 +1,5 @@
+@import "variables";
+
 .baza-logo {
   box-sizing: border-box;
   margin: 0;
@@ -6,35 +8,95 @@
   fill-opacity:1;
   fill-rule:nonzero;
   stroke:none;
-  #sky,
-  #grass {
-    fill: rgba(0, 0, 0, 0);
+  #sky {
+    fill: transparent;
+    animation: sky $animation_time forwards;
+    animation-delay: $animation_delay;
+  }
+  @keyframes sky {
+    15% {fill: transparent}
+    //30% {fill: #1b2c3e}
+    //60% {fill: #111658}
+    100% {fill: rgba(0, 38, 59, 0.95)
+    }
   }
   #border {
-    fill: #966c3b;
+    fill: rgba(38, 30, 14, 0.97);
   }
   #undertext,
   #baza {
-    fill: #765332;
+    fill: #3b2616;
+    animation: baza $animation_time forwards;
+    animation-delay: $animation_delay;
+  }
+  @keyframes baza {
+    0% {fill: #3b2616
+    }
+    //30% {fill: #2b3417}
+    100% {fill: antiquewhite}
   }
   #windows {
-    fill: #ececec;
+    //fill: #ececec;
+
     #win-1 {
-      fill: #fcd1d1;
+      fill: #007fa7;
+      animation: win-4 $animation_time forwards;
+      animation-delay: $animation_delay;
     }
     #win-2 {
-      fill: #aee1e1;
+      fill: #007fa7;
+      animation: win-2 $animation_time forwards;
+      animation-delay: $animation_delay;
     }
     #win-3 {
-      fill: #f8f1f1;
+      fill: #007fa7;
+      animation: win-3 $animation_time forwards;
+      animation-delay: $animation_delay;
     }
     #win-4 {
-      fill: #fdffbc;
+      fill: #007fa7;
+      animation: win-1 $animation_time forwards;
+      animation-delay: $animation_delay;
+    }
+    @keyframes win-2 {
+      0% {fill: #007fa7}
+      30% {fill: #015d78}
+      59% {fill: #015d78}
+      60% {fill: #fcd1d1}
+      100% {fill: #fcd1d1}
+    }
+    @keyframes win-1 {
+      0% {fill: #007fa7}
+      30% {fill: #015d78}
+      45% {fill: #015d78}
+      46% {fill: #aee1e1}
+      100% {fill: #aee1e1}
+    }
+    @keyframes win-4 {
+      0% {fill: #007fa7}
+      30% {fill: #015d78}
+      85% {fill: #015d78}
+      86% {fill: #f8f1f1}
+      100% {fill: #f8f1f1}
+    }
+    @keyframes win-3 {
+      0% {fill: #007fa7}
+      30% {fill: #015d78}
+      78% {fill: #015d78}
+      79% {fill: #fdffbc}
+      100% {fill: #fdffbc}
     }
   }
   #wall,
   #chimney {
     fill: #d0af84;
+    animation: walls $animation_time forwards;
+    animation-delay: $animation_delay;
+  }
+  @keyframes walls {
+    0% {fill: #d0af84}
+    100% {fill: #826d47
+    }
   }
   #frames,
   #door_frame {
@@ -50,6 +112,18 @@
     fill: #ffcc29;
   }
   #swirl {
+    transform-origin: 42% 42%;
+    position: absolute;
     fill: #81b214;
+    animation: swirl $animation_time forwards;
+    animation-delay: swirl $animation_delay;
+  }
+  @keyframes swirl {
+    0% {fill: #81b214}
+    80% {transform: none}
+    60% {fill: #81b214}
+    100% {transform: rotate(360deg)}
+    100% {fill: #42ff42}
   }
 }
+

@@ -1,0 +1,13 @@
+@import "bckg-gradients", "colors";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  height: 710px;
+}

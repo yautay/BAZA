@@ -14,12 +14,6 @@
         color-interpolation-filters: sRGB;
       }
     }
-    .logo-bckg {
-      display: inline;
-      rect {
-        fill: transparent;
-      }
-    }
     .glow {
       filter: url(#filter3362);
       path {

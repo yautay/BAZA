@@ -1,3 +1,4 @@
+@import "colors";
 
 #aquarius_logo {
   box-sizing: border-box;
@@ -16,19 +17,17 @@
     .logo-bckg {
       display: inline;
       rect {
-        opacity: 1;
-        fill: #000021;
-        fill-opacity: 1;
+        fill: transparent;
       }
     }
     .glow {
       filter: url(#filter3362);
       path {
         mix-blend-mode: normal;
-        fill: #ffff3d;
+        fill: #2600fd;
         fill-opacity: 1;
         fill-rule: evenodd;
-        stroke: #faffff;
+        stroke: $text-dark-contrast;
         stroke-width: 0.00312569;
         stroke-opacity: 1;
       }
@@ -40,7 +39,7 @@
         opacity: 1;
         fill: none;
         fill-opacity: 1;
-        stroke: #ffffe1;
+        stroke: $text-dark-contrast;
         stroke-width: 0.5;
         stroke-linecap: butt;
         stroke-linejoin: miter;
@@ -55,14 +54,14 @@
       mix-blend-mode: normal;
       path {
         mix-blend-mode: normal;
-        fill: #ffffe5;
+        fill: $text-dark-contrast;
         fill-opacity: 1;
         fill-rule: evenodd;
         stroke-width: 0.00312569;
       }
     }
     .aquarius {
-      fill: #ffffff;
+      fill: $text-dark-contrast;
       fill-opacity: 1;
       stroke: none;
       stroke-width: 0.264583;

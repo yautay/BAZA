@@ -263,6 +263,10 @@ header {
     background-size: 225%;
   }
 }
+  // SEPARATOR
+.separator-main {
+  display: none;
+}
   // SPONSORS
 .sponsors-row {
   padding-top: 40px;
@@ -311,6 +315,12 @@ header {
   .sponsors-row {
     margin: 0 50px 0 50px;
     min-height: 300px;
+  }
+}
+@media (min-width: 2400px) {
+  .separator-main {
+    display: block;
+    height: 200px;
   }
 }
 

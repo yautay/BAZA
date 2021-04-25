@@ -1,0 +1,75 @@
+
+#aquarius_logo {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  clip-rule: nonzero;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: none;
+  svg {
+    defs {
+      filter {
+        color-interpolation-filters: sRGB;
+      }
+    }
+    .logo-bckg {
+      display: inline;
+      rect {
+        opacity: 1;
+        fill: #000021;
+        fill-opacity: 1;
+      }
+    }
+    .glow {
+      filter: url(#filter3362);
+      path {
+        mix-blend-mode: normal;
+        fill: #ffff3d;
+        fill-opacity: 1;
+        fill-rule: evenodd;
+        stroke: #faffff;
+        stroke-width: 0.00312569;
+        stroke-opacity: 1;
+      }
+    }
+    .lines {
+      display: inline;
+      path {
+        display: inline;
+        opacity: 1;
+        fill: none;
+        fill-opacity: 1;
+        stroke: #ffffe1;
+        stroke-width: 0.5;
+        stroke-linecap: butt;
+        stroke-linejoin: miter;
+        stroke-miterlimit: 4;
+        stroke-dasharray: none;
+        stroke-opacity: 1;
+      }
+    }
+    .stars {
+      display: inline;
+      opacity: 1;
+      mix-blend-mode: normal;
+      path {
+        mix-blend-mode: normal;
+        fill: #ffffe5;
+        fill-opacity: 1;
+        fill-rule: evenodd;
+        stroke-width: 0.00312569;
+      }
+    }
+    .aquarius {
+      fill: #ffffff;
+      fill-opacity: 1;
+      stroke: none;
+      stroke-width: 0.264583;
+      .qa {
+        fill: #ff0000;
+      }
+    }
+  }
+
+}

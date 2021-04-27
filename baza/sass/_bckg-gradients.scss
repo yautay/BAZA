@@ -2,3 +2,7 @@ $section-gradient-0: linear-gradient(0deg, #ffffff 0%, #d7e1ec 74%);
 $section-gradient-180: linear-gradient(180deg, #ffffff 0%, #d7e1ec 74%);
 $section-gradient-0-60pct:linear-gradient(0deg, rgba(#ffffff, 0.3) 0%, rgba(#d7e1ec, 0.6) 74%);
 $section-gradient-180-60pct:linear-gradient(180deg, rgba(#ffffff, 0.3) 0%, rgba(#d7e1ec, 0.6) 74%);
+
+
+$news-main-background: #FFE8A0FF;
+$news-background: linear-gradient(to bottom, $news-main-background 0%, #fffbdb 100%);

@@ -94,9 +94,8 @@
     margin-right: 10px;
     position: relative;
     display: inline-block;
-    height: 80px;
+    height: 70px;
     border-radius: 50%;
-
     border-style: solid;
     border-width: 5px;
   }
@@ -104,6 +103,8 @@
     position: relative;
     display: inline-block;
     padding: 5px;
+    font-size: .8rem;
+    text-align: center;
   }
   .author-name {
     margin: 0;
@@ -112,6 +113,7 @@
     padding: 5px;
     text-transform: capitalize;
     text-align: center;
+    font-size: .8rem;
   }
 }
 // RDP
@@ -181,7 +183,7 @@
 // ATHORS CUSTOMIZATION
 .michal {
   img {
-    border-color: rgba(255, 199, 0, 0.87);
+    border-color: rgba(220, 114, 0, 0.87);
   }
 }
 .kasia {
@@ -191,6 +193,11 @@
 }
 
 // POSTS CUSTOMIZATION
+.date-20210427 {
+  .img {
+    background-image: url("../img/news/20210427.jpg");
+  }
+}
 .date-20210408 {
   .img {
     background-image: url("../img/news/20210408.jpg");

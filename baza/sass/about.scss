@@ -7,7 +7,32 @@
   margin: 0;
   padding: 0;
 }
-
 .about {
-  height: 710px;
+  font-size: 1.5rem;
+  div {
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-dark-contrast;
+    h1 {
+      font-size: 3rem;
+      color: $text-contrast;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px $text-shadow;
+    }
+    h2 {
+      font-size: 2rem;
+      text-shadow: 3px 3px 20px $text-dark-contrast-shadow;
+    }
+    p {
+      text-transform: none;
+      text-align: justify;
+    }
+  }
+}
+.content {
+  margin-left: 20px;
+  margin-right: 20px;
 }

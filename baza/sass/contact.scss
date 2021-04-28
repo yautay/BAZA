@@ -1,4 +1,4 @@
-@import "bckg-gradients", "colors";
+@import "bckg-gradients", "colors", "variables";
 
 *,
 *::before,
@@ -7,7 +7,125 @@
   margin: 0;
   padding: 0;
 }
-
 .contact {
-  height: 600px;
+  div {
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-dark-contrast;
+    h1 {
+      font-size: 3rem;
+      color: $text-contrast;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px $text-shadow;
+    }
+    .content {
+      margin-top: 50px !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      background-color: $news-main-background;
+      img {
+        margin-bottom: 30px;
+        display: inline-block;
+        width: 100%;
+        filter:grayscale(80%) contrast(80%);
+        animation: img 5s forwards;
+      }
+      .construction {
+        margin-top: 50px;
+        width: 20%;
+        animation: none;
+        filter: none;
+      }
+      @keyframes img {
+        0% {filter:grayscale(80%) contrast(80%);}
+        100% {filter:grayscale(0%) contrast(125%);}
+      }
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 5px;
+        text-shadow: 1px 1px 5px $text-shadow-dimmed;
+      }
+      p {
+        font-size: 1rem;
+        padding: 30px;
+        text-transform: none;
+        text-align: justify;
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  .contact {
+    div {
+      h1 {
+      }
+      .content {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        border-radius: $news-border-radius;
+        img {
+          margin-bottom: 30px;
+          display: inline-block;
+          width: 100%;
+          animation: img 5s forwards;
+          animation-delay: $animation_delay;
+          border-top-right-radius: $news-border-radius;
+          border-top-left-radius: $news-border-radius;
+        }
+        h2 {
+          font-size: 1.75rem;
+        }
+        p {
+          font-size: 1.25rem;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    div {
+      h1 {
+      }
+      .content {
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .contact {
+    div {
+      h1 {
+      }
+      .content {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1440px ) {
+  .contact {
+    div {
+      h1 {
+        font-size: 4rem;
+        padding-top: 50px;
+      }
+    }
+  }
 }

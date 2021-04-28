@@ -1,4 +1,4 @@
-@import "bckg-gradients", "colors";
+@import "bckg-gradients", "colors", "variables";
 
 *,
 *::before,
@@ -8,7 +8,6 @@
   padding: 0;
 }
 .about {
-  font-size: 1.5rem;
   div {
     padding-top: 100px !important;
     padding-bottom: 50px !important;
@@ -22,17 +21,85 @@
       font-weight: bold;
       text-shadow: 2px 2px 5px $text-shadow;
     }
-    h2 {
-      font-size: 2rem;
-      text-shadow: 3px 3px 20px $text-dark-contrast-shadow;
-    }
-    p {
-      text-transform: none;
-      text-align: justify;
+    .content {
+      margin-top: 50px !important;
+      padding-top: 40px !important;
+      padding-bottom: 0 !important;
+      background-color: $news-main-background;
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 5px;
+        text-shadow: 1px 1px 5px $text-shadow-dimmed;
+      }
+      p {
+        font-size: 1rem;
+        padding: 30px;
+        text-transform: none;
+        text-align: justify;
+      }
     }
   }
 }
-.content {
-  margin-left: 20px;
-  margin-right: 20px;
+@media (min-width: 576px) {
+  .about {
+    div {
+      h1 {
+      }
+      .content {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        border-radius: $news-border-radius;
+        h2 {
+          font-size: 1.75rem;
+        }
+        p {
+          font-size: 1.25rem;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    div {
+      h1 {
+      }
+      .content {
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    div {
+      h1 {
+      }
+      .content {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1440px ) {
+  .about {
+    div {
+      h1 {
+        font-size: 4rem;
+        padding-top: 50px;
+      }
+    }
+  }
 }

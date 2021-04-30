@@ -66,6 +66,21 @@
     }
   }
 }
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $text-dark-contrast;
+}
+a i {
+  transition: color, text-shadow .3s;
+}
+a:hover {
+  i {
+    text-shadow: 1px 1px 4px black;
+    color: black;
+  }
+}
 @media (min-width: 576px) {
   .contact {
     div {

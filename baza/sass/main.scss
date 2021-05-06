@@ -233,7 +233,7 @@ header {
     .motto-box{
       .motto-text {
         .motto-title {
-          margin-bottom: 15%;
+          margin-bottom: 10%;
           font-size: 5rem;
         }
         .motto-word {
@@ -265,6 +265,17 @@ header {
     background-image: url("https://static.baza-cerekwica.pl/webpage/artyzm-1900.jpg");
     background-position: 53% 36%;
     background-size: 225%;
+  }
+}
+@media (min-width: 1800px) {
+  .motto {
+    .motto-box{
+      .motto-text {
+        .motto-title {
+          margin-bottom: 15%;
+        }
+      }
+    }
   }
 }
   // SEPARATOR

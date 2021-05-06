@@ -19,7 +19,7 @@ body .bg::before {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("../img/wood-800.jpg");
+  background-image: url("https://static.baza-cerekwica.pl/wood-800.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -35,12 +35,12 @@ body .bg .hero-shadow {
 }
 @media (min-width: 768px) {
   body .bg::before {
-    background-image: url("../img/wood-1200.jpg");
+    background-image: url("https://static.baza-cerekwica.pl/wood-1200.jpg");
   }
 }
 @media (min-width: 1200px) {
   body .bg::before {
-    background-image: url("../img/wood-3000.jpg");
+    background-image: url("https://static.baza-cerekwica.pl/wood-3000.jpg");
   }
 }
 
@@ -207,19 +207,19 @@ header {
   }
 }
 .first-motto {
-  background-image: url("../img/bliskosc-1500.jpg");
+  background-image: url("https://static.baza-cerekwica.pl/webpage/bliskosc-1500.jpg");
   background-position: 9% 46%;
 }
 .second-motto {
-  background-image: url("../img/akceptacja-1500.jpg");
+  background-image: url("https://static.baza-cerekwica.pl/webpage/akceptacja-1500.jpg");
   background-position: 78% 44%;
 }
 .third-motto {
-  background-image: url("../img/zaangazowanie-1500.jpg");
+  background-image: url("https://static.baza-cerekwica.pl/webpage/zaangazowanie-1500.jpg");
   background-position: 28% 27%;
 }
 .fourth-motto {
-  background-image: url("../img/artyzm-1500.jpg");
+  background-image: url("https://static.baza-cerekwica.pl/webpage/artyzm-1500.jpg");
   background-position: 9% 35%;
 }
 @media (min-width: 768px) {
@@ -247,22 +247,22 @@ header {
     }
   }
   .first-motto {
-    background-image: url("../img/bliskosc-1900.jpg");
+    background-image: url("https://static.baza-cerekwica.pl/webpage/bliskosc-1900.jpg");
     background-position: 72% 57%;
     background-size: 195%;
   }
   .second-motto {
-    background-image: url("../img/akceptacja-1900.jpg");
+    background-image: url("https://static.baza-cerekwica.pl/webpage/akceptacja-1900.jpg");
     background-position: 57% 20%;
     background-size: 195%;
   }
   .third-motto {
-    background-image: url("../img/zaangazowanie-1900.jpg");
+    background-image: url("https://static.baza-cerekwica.pl/webpage/zaangazowanie-1900.jpg");
     background-position: 68% 15%;
     background-size: 195%;
   }
   .fourth-motto {
-    background-image: url("../img/artyzm-1900.jpg");
+    background-image: url("https://static.baza-cerekwica.pl/webpage/artyzm-1900.jpg");
     background-position: 53% 36%;
     background-size: 225%;
   }

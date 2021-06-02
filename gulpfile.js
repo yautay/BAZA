@@ -12,6 +12,7 @@ const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
 const kit = require("gulp-kit")
 const plumber = require('gulp-plumber');
+const replace = require('gulp-replace');
 sass.compiler = require("node-sass");
 
 const paths = {

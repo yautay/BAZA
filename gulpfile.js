@@ -11,6 +11,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
 const kit = require("gulp-kit")
+const plumber = require('gulp-plumber');
 sass.compiler = require("node-sass");
 
 const paths = {
@@ -33,6 +34,7 @@ const paths = {
 
 function sassCompiler(done) {
     src(paths.src.sass)
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on("error", sass.logError))
         .pipe(autoprefixer({cascade: false}))
@@ -45,6 +47,7 @@ function sassCompiler(done) {
 
 function javaScript(done) {
     src(paths.src.js)
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(babel({presets: ["@babel/env"]}))
         .pipe(uglify())
@@ -56,6 +59,7 @@ function javaScript(done) {
 
 function imageMinify(done) {
     src(paths.src.img_not_optimized)
+        .pipe(plumber())
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
             imagemin.mozjpeg({quality: 60, progressive: true}),
@@ -74,12 +78,14 @@ function imageMinify(done) {
 
 function cleanDist(done) {
     src(paths.dest.dist, {read: false})
+        .pipe(plumber())
         .pipe(clean());
     done()
 }
 
 function handleKits(done) {
     src(paths.src.html)
+        .pipe(plumber())
         .pipe(kit())
         .pipe(dest(paths.dest.root))
     done();

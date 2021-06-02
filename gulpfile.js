@@ -21,7 +21,7 @@ const paths = {
         img_all: "./src/img/**/*",
         img_not_optimized: "./src/img/not_optimized/**/*",
         img_optimized: "./src/img/optimized/**/*",
-        html: "./html/**/*.kit"
+        html: "./src/html/**/*.kit"
     },
     dest: {
         css: "./dist/css",

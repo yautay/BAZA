@@ -1,5 +1,10 @@
 .idea
 package-lock.json
+index.html
+about.html
+contact.html
+news.html
+
 # Created by https://www.toptal.com/developers/gitignore/api/webstorm,node,python,sass
 # Edit at https://www.toptal.com/developers/gitignore?templates=webstorm,node,python,sass
 

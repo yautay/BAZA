@@ -6,22 +6,28 @@ const rename = require("gulp-rename");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
+const clean = require('gulp-clean');
 const sourcemaps = require("gulp-sourcemaps");
 const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
+const kit = require("gulp-kit")
 sass.compiler = require("node-sass");
 
 const paths = {
     src: {
         sass: "./src/sass/**/*.scss",
         js: "./src/js/**/*.js",
+        img_all: "./src/img/**/*",
         img_not_optimized: "./src/img/not_optimized/**/*",
-        img_optimized: "./src/img/optimized/**/*"
+        img_optimized: "./src/img/optimized/**/*",
+        html: "./html/**/*.kit"
     },
     dest: {
         css: "./dist/css",
         js: "./dist/js",
-        img: "./dist/img"
+        img: "./dist/img",
+        dist: "./dist",
+        root: "./"
     }
 }
 
@@ -66,6 +72,19 @@ function imageMinify(done) {
     done();
 }
 
+function cleanDist(done) {
+    src(paths.dest.dist, {read: false})
+        .pipe(clean());
+    done()
+}
+
+function handleKits(done) {
+    src(paths.src.html)
+        .pipe(kit())
+        .pipe(dest(paths.dest.root))
+    done();
+}
+
 function liveServer(done) {
     browserSync.init({server: {baseDir: "./"}});
     done()
@@ -73,11 +92,12 @@ function liveServer(done) {
 
 function liveMonitor(done) {
     watch("*.html").on("change", reload);
-    watch([paths.src.sass, paths.src.js], parallel(sassCompiler, javaScript)).on("change", reload)
+    watch([paths.src.sass, paths.src.js, paths.src.html], parallel(handleKits, sassCompiler, javaScript)).on("change", reload)
     done()
 }
 
-const mainFunctions = parallel(sassCompiler, javaScript, imageMinify)
+const mainFunctions = parallel(handleKits, sassCompiler, javaScript, imageMinify);
 exports.default = mainFunctions;
 exports.live = series(mainFunctions, liveServer, liveMonitor);
 exports.images = imageMinify;
+exports.clean = cleanDist;

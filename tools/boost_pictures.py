@@ -1,5 +1,4 @@
 from PIL import Image, ImageEnhance
-import math
 import os
 
 path = os.getcwd()+"/galleries_workbench"

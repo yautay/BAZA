@@ -2,7 +2,8 @@ from PIL import Image
 import math
 import os
 
-path = os.getcwd()
+path = os.getcwd() + "/galleries_workbench"
+os.chdir(path)
 
 desired_size = 1600, 800
 size_b4 = 0
@@ -10,7 +11,8 @@ size_af = 0
 
 print("STEP 1 - RENAMING PICTURES \n")
 for directory in os.listdir():
-    os.chdir(path + "/" + directory)
+    if directory != ".gitkeep":
+        os.chdir(path + "/" + directory)
     print("Renaming files in: {}".format(os.getcwd()))
     file_count = 1
     for file in os.listdir():

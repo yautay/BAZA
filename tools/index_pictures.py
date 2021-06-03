@@ -1,5 +1,3 @@
-from PIL import Image, ImageEnhance
-import math
 import os
 
 uri_galleries = "dist/img/gallery/{}"

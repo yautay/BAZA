@@ -1,5 +1,3 @@
-from PIL import Image, ImageEnhance
-import math
 import os
 
 html_part_1 = open("lib/gallery_part_1.kit", "r")
@@ -17,8 +15,8 @@ pattern_galleries_div = "<div id=\"{id}\" class=\"single-gallery\">\n" \
                         "   <div class=\"gallery-desc\">{desc}</div>\n" \
                         "</div>\n\n\n"
 
-galleries_path = "./{}.html\n"
-galleries_index = open("../dist/img/gallery/galleries_index.txt", "a")
+galleries_path = "{}.html\n"
+galleries_index = open("../galleries_index.txt", "a")
 
 for directory in os.listdir():
     if directory[-4:] == "html":
@@ -30,20 +28,15 @@ for directory in os.listdir():
         for line in index_file:
             html += pattern_gallery_div.format(line[:-1])
     html += html_foot
-    with open("../{}.html".format(directory), "w") as gallery_html:
+    with open("../{}.kit".format(directory), "w") as gallery_html:
         gallery_html.write(html)
     galleries_index.write(galleries_path.format(directory))
-    with open("../divs_to_main.html", "a") as main_divs:
+    with open("../_divs_to_main_20210603.kit", "a") as main_divs:
         href = galleries_path.format(directory)
         main_divs.write(pattern_galleries_div.format(id=directory,
                                                      href=href[:-1],
                                                      title=directory,
                                                      desc="WSTAWIĆ OPIS"))
-
-    os.chdir(path)
-
 galleries_index.close()
 html_part_1.close()
 html_part_3.close()
-
-

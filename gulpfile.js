@@ -13,6 +13,8 @@ const reload = browserSync.reload;
 const kit = require("gulp-kit")
 const plumber = require('gulp-plumber');
 const replace = require('gulp-replace');
+const htmlmin = require('gulp-htmlmin');
+const htmlhint = require("gulp-htmlhint");
 sass.compiler = require("node-sass");
 
 const paths = {
@@ -95,6 +97,8 @@ function handleKits(done) {
             console.log('Found ' + match);
             return "";
         }))
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlhint())
         .pipe(dest(paths.dest.root))
     done();
 }

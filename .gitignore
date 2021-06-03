@@ -390,3 +390,14 @@ fabric.properties
 .idea/codestream.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/webstorm,node,python,sass
+/20210423.html
+/20210427.html
+/20210428.html
+/20210518.html
+/.idea/.gitignore
+/.idea/baza.iml
+/gallery.html
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/webResources.xml

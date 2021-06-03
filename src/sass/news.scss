@@ -8,6 +8,7 @@
   padding: 0;
 }
 .news {
+  min-height: 100vh;
   margin-bottom: 50px;
   h1 {
     text-align: center;
@@ -211,5 +212,10 @@
 .date-20210408_2 {
   .img {
     background-image: url("../img/news/news20210408_2.jpg");
+  }
+}
+.date-20210601 {
+  .img {
+    background-image: url("../img/news/news20210601.jpg");
   }
 }

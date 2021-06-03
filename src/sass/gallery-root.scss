@@ -9,6 +9,7 @@
 }
 
 .gallery-container {
+  min-height: 100vh;
   margin-bottom: 50px;
   h1 {
     text-align: center;
@@ -34,6 +35,8 @@
     height: 400px;
     width: 400px;
     border-radius: $news-border-radius;
+    background-position: center;
+    background-size: cover;
     .gallery-bg {
       position: absolute;
       height: inherit;
@@ -120,8 +123,15 @@
 
 //CMS
 
-#galeria_testowa {
-  background-image: url("https://static.baza-cerekwica.pl/gallery/20210423-pakiety/20210421_100846.jpg");
-  background-position: center;
-  background-size: cover;
+#g20210518 {
+  background-image: url("../img/gallery/20210518/20210518_3.jpg");
+}
+#g20210428 {
+  background-image: url("../img/gallery/20210428/20210428_9.jpg");
+}
+#g20210427 {
+  background-image: url("../img/gallery/20210427/20210427_2.jpg");
+}
+#g20210423 {
+  background-image: url("../img/gallery/20210423/20210423_5.jpg");
 }

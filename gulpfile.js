@@ -29,7 +29,8 @@ const paths = {
         js: "./dist/js",
         img: "./dist/img",
         dist: "./dist",
-        root: "./"
+        root: "./",
+        html: "./*.html"
     }
 }
 
@@ -78,7 +79,7 @@ function imageMinify(done) {
 }
 
 function cleanDist(done) {
-    src(paths.dest.dist, {read: false})
+    src([paths.dest.dist, paths.dest.html], {read: false})
         .pipe(plumber())
         .pipe(clean());
     done()
@@ -88,6 +89,12 @@ function handleKits(done) {
     src(paths.src.html)
         .pipe(plumber())
         .pipe(kit())
+        .pipe(replace(/\.\.\/\.\.\//g, function handleReplace(match, p1, offset, string) {
+            // Replace "../../" and log a ton of information
+            // See https://mdn.io/string.replace#Specifying_a_function_as_a_parameter
+            console.log('Found ' + match);
+            return "";
+        }))
         .pipe(dest(paths.dest.root))
     done();
 }

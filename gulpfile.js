@@ -123,13 +123,14 @@ function liveMonitor(done) {
 function demoGtm(done) {
     src(paths.src.gtm)
         .pipe(plumber())
-        .pipe(replace(/GTM-.{7}/g, function handleReplace(match, p1, offset, string) {
+        .pipe(replace(/GTM-.{7}/g, function handleReplace(match) {
             if (match == gtm_token.baza) {
                 console.log("Found PRODUCTION token, replacing with DEMO");
                 console.log(match + " replacing: " + gtm_token.demo);
                 return gtm_token.demo;
             } else {
                 console.log("Found DEMO token");
+                return match;
             }
         }))
         .pipe(dest(paths.dest.kit));
@@ -139,13 +140,14 @@ function demoGtm(done) {
 function bazaGtm(done) {
     src(paths.src.gtm)
         .pipe(plumber())
-        .pipe(replace(/GTM-.{7}/g, function handleReplace(match, p1, offset, string) {
+        .pipe(replace(/GTM-.{7}/g, function handleReplace(match) {
             if (match == gtm_token.demo) {
                 console.log("Found DEMO token, replacing with PRODUCTION");
                 console.log(match);
                 return gtm_token.baza;
             } else {
                 console.log("Found PRODUCTION token");
+                return match;
             }
         }))
         .pipe(dest(paths.dest.kit));

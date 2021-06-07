@@ -24,7 +24,8 @@ const paths = {
         img_all: "./src/img/**/*",
         img_not_optimized: "./src/img/not_optimized/**/*",
         img_optimized: "./src/img/optimized/**/*",
-        html: "./src/html/**/*.kit"
+        html: "./src/html/**/*.kit",
+        gtm: "./src/html/**/_gtm*"
     },
     dest: {
         css: "./dist/css",
@@ -32,8 +33,13 @@ const paths = {
         img: "./dist/img",
         dist: "./dist",
         root: "./",
-        html: "./*.html"
+        html: "./*.html",
+        kit: "./src/html"
     }
+}
+const gtm_token = {
+    demo: "GTM-TVBDD65",
+    baza: "GTM-P3QKC9J"
 }
 
 function sassCompiler(done) {
@@ -114,8 +120,41 @@ function liveMonitor(done) {
     done()
 }
 
+function demoGtm(done) {
+    src(paths.src.gtm)
+        .pipe(plumber())
+        .pipe(replace(/GTM-.{7}/g, function handleReplace(match, p1, offset, string) {
+            if (match == gtm_token.baza) {
+                console.log("Found PRODUCTION token, replacing with DEMO");
+                console.log(match + " replacing: " + gtm_token.demo);
+                return gtm_token.demo;
+            } else {
+                console.log("Found DEMO token");
+            }
+        }))
+        .pipe(dest(paths.dest.kit));
+    done();
+}
+
+function bazaGtm(done) {
+    src(paths.src.gtm)
+        .pipe(plumber())
+        .pipe(replace(/GTM-.{7}/g, function handleReplace(match, p1, offset, string) {
+            if (match == gtm_token.demo) {
+                console.log("Found DEMO token, replacing with PRODUCTION");
+                console.log(match);
+                return gtm_token.baza;
+            } else {
+                console.log("Found PRODUCTION token");
+            }
+        }))
+        .pipe(dest(paths.dest.kit));
+    done();
+}
+
 const mainFunctions = parallel(handleKits, sassCompiler, javaScript, imageMinify);
-exports.default = mainFunctions;
-exports.live = series(mainFunctions, liveServer, liveMonitor);
+exports.default = series(demoGtm, mainFunctions);
+exports.live = series(demoGtm, mainFunctions, liveServer, liveMonitor);
 exports.images = imageMinify;
 exports.clean = cleanDist;
+exports.prod = series(cleanDist, bazaGtm, mainFunctions);

@@ -159,4 +159,5 @@ exports.default = series(demoGtm, mainFunctions);
 exports.live = series(demoGtm, mainFunctions, liveServer, liveMonitor);
 exports.images = imageMinify;
 exports.clean = cleanDist;
-exports.prod = series(cleanDist, bazaGtm, mainFunctions);
+exports.prod = bazaGtm;
+exports.prodkit = mainFunctions;

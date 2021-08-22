@@ -1,0 +1,82 @@
+@import "src/sass/bckg-gradients", "src/sass/colors", "src/sass/variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.schedule {
+  div {
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-dark-contrast;
+    h1 {
+      font-size: 3rem;
+      color: $text-contrast;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px $text-shadow;
+    }
+    .schedule_pic{
+      margin-top: 50px !important;
+      padding-top: 40px !important;
+      padding-bottom: 0 !important;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  .schedule {
+    div {
+      h1 {
+      }
+      .schedule_pic {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        img {
+          border-radius: $news-border-radius;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .schedule {
+    div {
+      h1 {
+      }
+      .schedule_pic {
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .schedule {
+    div {
+      h1 {
+      }
+      .schedule_pic {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+      }
+    }
+  }
+}
+@media (min-width: 1440px ) {
+  .schedule {
+    div {
+      h1 {
+        font-size: 4rem;
+        padding-top: 50px;
+      }
+    }
+  }
+}

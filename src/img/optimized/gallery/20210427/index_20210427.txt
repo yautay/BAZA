@@ -1,9 +1,0 @@
-dist/img/gallery/20210427/20210427_7.jpg
-dist/img/gallery/20210427/20210427_3.jpg
-dist/img/gallery/20210427/20210427_4.jpg
-dist/img/gallery/20210427/20210427_6.jpg
-dist/img/gallery/20210427/20210427_8.jpg
-dist/img/gallery/20210427/20210427_5.jpg
-dist/img/gallery/20210427/20210427_2.jpg
-dist/img/gallery/20210427/20210427_9.jpg
-dist/img/gallery/20210427/20210427_1.jpg

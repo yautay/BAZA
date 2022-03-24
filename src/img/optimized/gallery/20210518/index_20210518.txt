@@ -1,4 +1,0 @@
-dist/img/gallery/20210518/20210518_1.jpg
-dist/img/gallery/20210518/20210518_4.jpg
-dist/img/gallery/20210518/20210518_2.jpg
-dist/img/gallery/20210518/20210518_3.jpg

@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="app-main">
+  <section id="contact">
     <p>CONTACT</p>
   </section>
 </template>
@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 #contact {
-  height: 100vh;
+  height: 1500px;
   background-color: rgba(107, 66, 255, 0.34);
 }
 </style>

@@ -1,55 +1,27 @@
 <template>
-  <header id="app-header">
-    <nav>
-      <ul>
-        <li>
-          <router-link to="/schedule">harmonogram</router-link>
-        </li>
-        <li>
-          <router-link to="/news">aktualności</router-link>
-        </li>
-        <li>
-          <router-link to="/gallery">galeria</router-link>
-        </li>
-        <li>
-          <router-link to="/about">kim jesteśmy</router-link>
-        </li>
-        <li>
-          <router-link to="/contact">kontakt</router-link>
-        </li>
-      </ul>
-    </nav>
+  <header id="header">
+    <the-navigation></the-navigation>
   </header>
 </template>
 
 <script>
+import TheNavigation from "@/components/base/nav/TheNavigation";
+
 export default {
   name: 'TheHeader',
+  components: {
+    'the-navigation': TheNavigation
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-#app-header {
+#header {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100vw;
+  z-index: 999;
   background-color: rgb(147, 227, 209);
-  nav {
-    height: 100%;
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      li {
-        margin: 0 2rem;
-      }
-    }
-
-  }
 }
-
-
 </style>

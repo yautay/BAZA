@@ -1,13 +1,16 @@
 <template>
+  <the-background></the-background>
   <the-header></the-header>
-  <main>
+  <base-content>
     <router-view></router-view>
-  </main>
+  </base-content>
   <the-footer></the-footer>
 </template>
 
 <script>
+import TheBackground from "@/components/base/TheBackground";
 import TheHeader from "@/components/base/TheHeader";
+import BaseContent from "@/components/base/BaseContent";
 import TheFooter from "@/components/base/TheFooter";
 
 export default {
@@ -15,42 +18,33 @@ export default {
   components: {
     'the-header': TheHeader,
     'the-footer': TheFooter,
+    'the-background': TheBackground,
+    'base-content': BaseContent
   }
 
 }
 </script>
 
 <style lang="scss">
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  html {
-    font-family: sans-serif;
-  }
-  body {
-    margin: 0;
-    height: 100vh;
+}
 
-    #app-header {
-      position: fixed;
-      top: 0;
-      height: 50px;
-      width: 100vw;
-      z-index: 999;
-    }
-    main {
-      position: relative;
-      margin: auto;
-      top: 50px;
-      width: 80vw;
-    }
-    #app-footer {
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      height: 100px;
-    }
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff9f4;
+  font-size: 10px;
+
+  body {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff9f4;
+    font-size: 10px;
+
   }
 }
 </style>

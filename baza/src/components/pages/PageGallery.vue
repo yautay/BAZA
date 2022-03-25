@@ -1,5 +1,5 @@
 <template>
-  <section id="news" class="app-main">
+  <section id="gallery">
     <p>GALLERY</p>
   </section>
 </template>
@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style scoped>
-#news {
+#gallery {
+  height: 1500px;
+  background-color: rgba(242, 66, 255, 0.34);
 }
 </style>

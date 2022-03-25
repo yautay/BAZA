@@ -1,5 +1,5 @@
 <template>
-  <section id="news" class="app-main">
+  <section id="news">
     <p>NEWS</p>
   </section>
 </template>
@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 #news {
-  height: 200vh;
-  background-color: rgba(66, 255, 66, 0.34);
+  height: 3700px;
+  background-color: rgba(66, 255, 176, 0.34);
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section id="news" class="app-main">
+  <section id="schedule">
     <p>SCHEDULE</p>
   </section>
 </template>
@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style scoped>
-#news {
+#schedule {
+  height: 3700px;
+  background-color: rgba(48, 126, 93, 0.34);
 }
 </style>

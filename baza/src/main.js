@@ -2,6 +2,7 @@ import App from './App.vue';
 import {createApp} from 'vue';
 import {createRouter, createWebHistory} from 'vue-router';
 
+import PageStart from "@/components/pages/PageStart";
 import PageSchedule from "@/components/pages/PageSchedule";
 import PageNews from "@/components/pages/PageNews";
 import PageAbout from "@/components/pages/PageAbout";
@@ -11,6 +12,7 @@ import PageContact from "@/components/pages/PageContact";
 const router = createRouter({
     history: createWebHistory(),
     routes: [
+        {path: '/', component: PageStart},
         {path: '/schedule', component: PageSchedule},
         {path: '/news', component: PageNews},
         {path: '/gallery', component: PageGallery},

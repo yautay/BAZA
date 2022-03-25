@@ -1,6 +1,6 @@
 <template>
-  <section id="about" class="content">
-    <p>ABOUT</p>
+  <section id="start">
+    <p>START</p>
   </section>
 </template>
 
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped>
-#about {
+#start {
   height: 1500px;
   background-color: rgba(107, 66, 255, 0.34);
 }

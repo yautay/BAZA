@@ -18,10 +18,10 @@ export default {
     height: 100%;
     width: 100%;
     background-image: url("https://baza-mrowino.s3.eu-central-1.amazonaws.com/wood-800.jpg");
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       background-image: url("https://baza-mrowino.s3.eu-central-1.amazonaws.com/wood-1200.jpg");
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $laptop) {
       background-image: url("https://baza-mrowino.s3.eu-central-1.amazonaws.com/wood-3000.jpg");
     }
     background-position: center;

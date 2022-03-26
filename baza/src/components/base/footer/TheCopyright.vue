@@ -33,7 +33,7 @@ div {
     font-weight: bolder;
 
     .qa-inline {
-      color: red;
+      color: #bb001b;
     }
   }
 }

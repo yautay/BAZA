@@ -29,7 +29,7 @@ export default {
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: $nav-bckg-solid;
+  background-color: $bckg-solid;
 
   .tofitcontent {
     display: flex;
@@ -37,22 +37,22 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     @media (min-width: $mobile) {
-      padding: 0 40px 0;
+      padding: $content-padding-mobile;
     }
 
     @media (min-width: $tablet) {
-      padding: 0 80px 0;
+      padding: $content-padding-tablet;
     }
 
     @media (min-width: $laptop) {
-      padding: 0 10vw 0;
+      padding: $content-padding-laptop;
     }
-    @media (min-width: $hd + 1) {
-      padding: 0 20vw 0;
+    @media (min-width: $hd) {
+      padding: $content-padding-hd;
     }
 
     .footer {
-      flex: 1 200px;
+      flex: 1 195px;
       text-align: center;
       font-size: 1.3rem;
     }

@@ -19,9 +19,8 @@ export default {
 #header {
   position: fixed;
   top: 0;
-  height: 50px;
+  height: $header;
   width: 100vw;
   z-index: 999;
-  background-color: rgb(147, 227, 209);
 }
 </style>

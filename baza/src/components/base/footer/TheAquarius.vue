@@ -252,7 +252,7 @@ div {
       stroke-width: 0.264583;
 
       .qa {
-        fill: #ff0000;
+        fill: #bb001b;
       }
 
     }

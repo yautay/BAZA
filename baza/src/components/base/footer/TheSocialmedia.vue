@@ -24,19 +24,22 @@ div {
     padding: 0 10px 0;
     color: $text-dark-contrast;
     font-size: 4rem;
-    transition: text-shadow, .3s;
+    transition: text-shadow, color, .7s;
+
+    &:link &:visited {
+      color: $text-dark-contrast;
+    }
   }
 
-  i:link {
-    color: $text-dark-contrast;
+  .fa-at:hover {
+    color: #bb001b;
+    text-shadow: 0 0 2px #bb001b;
   }
 
-  i:visited {
-    color: $text-dark-contrast;
-  }
+  .fa-facebook-square:hover {
+    color: #4267B2;
+    text-shadow: 0 0 2px #4267B2;
 
-  i:hover {
-    text-shadow: 1px 1px 2px black;
   }
 }
 </style>

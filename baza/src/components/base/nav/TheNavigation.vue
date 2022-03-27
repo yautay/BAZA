@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="container-home">
-      <router-link style="text-decoration: none" to="/">
+      <router-link to="/">
         <swirl swirl-size="2rem"></swirl>
       </router-link>
     </div>
@@ -39,6 +39,12 @@ nav {
   background-color: $bckg-solid;
   transition: background-color .5s;
   font-size: 1.1rem;
+}
+
+.container-home {
+  a {
+    text-decoration: none;
+  }
 }
 
 ul {

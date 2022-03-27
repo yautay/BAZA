@@ -11,9 +11,16 @@ export default {
 }
 </script>
 
-<style scoped>
-  * {
+<style lang="scss" scoped>
+  a {
     text-decoration: none;
     color: inherit;
+
+
+  }
+  a:hover,
+  a:active,
+  a.router-link-exact-active {
+    background-color: red;
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <footer id="footer">
-    <div class="tofitcontent">
+    <div class="container-content">
       <the-socialmedia class="footer socialmedia visible"></the-socialmedia>
       <the-copyright class="footer copywright visible"></the-copyright>
       <the-aquarius class="footer aquarius visible"></the-aquarius>
@@ -31,7 +31,7 @@ export default {
   width: 100%;
   background-color: $bckg-solid;
 
-  .tofitcontent {
+  .container-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

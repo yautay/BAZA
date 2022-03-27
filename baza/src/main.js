@@ -2,6 +2,7 @@ import App from './App.vue';
 import {createApp} from 'vue';
 import {createRouter, createWebHistory} from 'vue-router';
 
+
 import PageStart from "@/components/pages/PageStart";
 import PageSchedule from "@/components/pages/PageSchedule";
 import PageNews from "@/components/pages/PageNews";

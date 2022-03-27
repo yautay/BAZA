@@ -12,5 +12,8 @@ export default {
 </script>
 
 <style scoped>
-
+  * {
+    text-decoration: none;
+    color: inherit;
+  }
 </style>

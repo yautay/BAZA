@@ -1,34 +1,38 @@
 <template>
   <nav>
-    <div>
-      <div>
-        <nav-link route="/"><i class="icon-swirl"></i></nav-link>
-      </div>
-      <div>
-        <ul>
-          <nav-link route="/schedule">harmonogram</nav-link>
-          <nav-link route="/news">aktualności</nav-link>
-          <nav-link route="/gallery">galeria</nav-link>
-          <nav-link route="/about">kim jesteśmy</nav-link>
-          <nav-link route="/contact">kontakt</nav-link>
-        </ul>
-      </div>
+    <div class="container-home">
+      <router-link style="text-decoration: none" to="/">
+        <swirl swirl-size="2rem"></swirl>
+      </router-link>
+    </div>
+    <div class="container-links">
+      <ul>
+        <nav-link route="/schedule">harmonogram</nav-link>
+        <nav-link route="/news">aktualności</nav-link>
+        <nav-link route="/gallery">galeria</nav-link>
+        <nav-link route="/about">kim jesteśmy</nav-link>
+        <nav-link route="/contact">kontakt</nav-link>
+      </ul>
     </div>
   </nav>
 </template>
 
 <script>
 import TheNavLink from "@/components/base/nav/TheNavLink";
+import TheSwirl from "@/components/ui/TheSwirl";
 
 export default {
   name: "TheNavigation",
   components: {
-    'nav-link': TheNavLink
+    'nav-link': TheNavLink,
+    'swirl': TheSwirl
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "src/assets/styles/icomoon";
+
 nav {
   height: 100%;
   text-transform: uppercase;
@@ -36,10 +40,7 @@ nav {
   transition: background-color .5s;
   font-size: 1.1rem;
 }
-.icon-swirl {
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px green;
-}
+
 ul {
   list-style: none;
   padding: 0;
@@ -52,6 +53,5 @@ ul {
     margin: 0 2rem;
   }
 }
-
 
 </style>

@@ -18,7 +18,8 @@ const router = createRouter({
         {path: '/news', component: PageNews},
         {path: '/gallery', component: PageGallery},
         {path: '/about', component: PageAbout},
-        {path: '/contact', component: PageContact}
+        {path: '/contact', component: PageContact},
+        {path: '/:notFound(.*)', redirect: '/'},
     ],
     linkActiveClass: 'active'
 });

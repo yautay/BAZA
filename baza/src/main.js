@@ -13,12 +13,32 @@ import PageContact from "@/components/pages/PageContact";
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        {path: '/', component: PageStart},
-        {path: '/schedule', component: PageSchedule},
-        {path: '/news', component: PageNews},
-        {path: '/gallery', component: PageGallery},
-        {path: '/about', component: PageAbout},
-        {path: '/contact', component: PageContact},
+        {
+            name: 'home',
+            path: '/',
+            component: PageStart
+        },
+        {
+            name: 'schedule',
+            path: '/schedule',
+            component: PageSchedule
+        },
+        {
+            name: 'news',
+            path: '/news', component: PageNews
+        },
+        {
+            name: 'gallery',
+            path: '/gallery', component: PageGallery
+        },
+        {
+            name: 'about',
+            path: '/about', component: PageAbout
+        },
+        {
+            name: 'contact',
+            path: '/contact', component: PageContact
+        },
         {path: '/:notFound(.*)', redirect: '/'},
     ],
     linkActiveClass: 'active'

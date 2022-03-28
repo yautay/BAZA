@@ -28,10 +28,12 @@ export default {
 #footer {
   position: relative;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
+  height: $footer-height;
   background-color: $bckg-solid;
 
   .container-content {
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

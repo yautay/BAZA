@@ -2,7 +2,7 @@
   <div id="aquarius_logo">`
     <a href="mailto:contact@cpt-aquarius.pl">
       <svg
-          height="90px"
+          height="85px"
           viewBox="0 0 180 180">
         <defs>
           <filter id="filter3362" height="1" width="1" x="0" y="0">
@@ -170,7 +170,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 div {
   display: inline;
   @media (max-width: $tablet) {
@@ -187,13 +186,10 @@ div {
   stroke: none;
 
   svg {
-
     defs {
-
       filter {
         color-interpolation-filters: sRGB;
       }
-
     }
 
     .glow {
@@ -208,7 +204,6 @@ div {
         stroke-width: 0.00312569;
         stroke-opacity: 1;
       }
-
     }
 
     .lines {
@@ -227,7 +222,6 @@ div {
         stroke-dasharray: none;
         stroke-opacity: 1;
       }
-
     }
 
     .stars {
@@ -242,7 +236,6 @@ div {
         fill-rule: evenodd;
         stroke-width: 0.00312569;
       }
-
     }
 
     .aquarius {
@@ -254,9 +247,7 @@ div {
       .qa {
         fill: #bb001b;
       }
-
     }
   }
-
 }
 </style>

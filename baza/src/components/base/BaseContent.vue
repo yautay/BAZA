@@ -1,5 +1,5 @@
 <template>
-  <main id="content">
+  <main>
     <slot><p>CONTENT</p></slot>
   </main>
 </template>
@@ -10,12 +10,12 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-#content {
+<style lang="scss">
+main {
   position: relative;
   margin: auto;
-  top: $header;
-  margin-bottom: $footer - ($footer - $header);
+  top: $header-height;
+  margin-bottom: $footer-height - ($footer-height - $header-height);
 
   @media (min-width: $mobile) {
     padding: $content-padding-mobile;
@@ -31,6 +31,21 @@ export default {
   @media (min-width: $hd) {
     padding: $content-padding-hd;
   }
-
+  .page__header {
+    height: $page-title-height;
+    text-align: center;
+    .page-title {
+      line-height: $page-title-height;
+      font-size: 4rem;
+      color: $text-contrast;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px $text-shadow;
+    }
+  }
+  .page__content {
+    min-height: calc(100vh - #{$page-title-height} - #{$header-height} - #{$footer-height});
+    padding: 10px 0 10px;
+  }
 }
 </style>

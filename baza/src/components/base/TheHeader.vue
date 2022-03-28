@@ -19,7 +19,7 @@ export default {
 #header {
   position: fixed;
   top: 0;
-  height: $header;
+  height: $header-height;
   width: 100vw;
   z-index: 999;
 }

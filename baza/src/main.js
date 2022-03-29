@@ -11,9 +11,7 @@ import PageAbout from "@/components/pages/PageAbout";
 import PageGallery from "@/components/pages/PageGallery";
 import PageContact from "@/components/pages/PageContact";
 import TheHeader from "@/components/base/TheHeader";
-import TheFooter from "@/components/base/TheFooter";
 import TheAdminHeader from "@/components/base/TheAdminHeader";
-import TheAdminFooter from "@/components/base/TheAdminFooter";
 
 
 const router = createRouter({
@@ -22,37 +20,37 @@ const router = createRouter({
         {
             name: 'home',
             path: '/',
-            components: {router_header: TheHeader, router_content: PageStart, router_footer: TheFooter}
+            components: {router_header: TheHeader, router_content: PageStart}
         },
         {
             name: 'admin',
             path: '/admin',
-            components: {router_header: TheAdminHeader, router_content: PageAdmin, router_footer: TheAdminFooter}
+            components: {router_header: TheAdminHeader, router_content: PageAdmin}
         },
         {
             name: 'schedule',
             path: '/schedule',
-            components: {router_header: TheHeader, router_content: PageSchedule, router_footer: TheFooter}
+            components: {router_header: TheHeader, router_content: PageSchedule}
         },
         {
             name: 'news',
             path: '/news',
-            components: {router_header: TheHeader, router_content: PageNews, router_footer: TheFooter}
+            components: {router_header: TheHeader, router_content: PageNews}
         },
         {
             name: 'gallery',
             path: '/gallery',
-            components: {router_header: TheHeader, router_content: PageGallery, router_footer: TheFooter}
+            components: {router_header: TheHeader, router_content: PageGallery}
         },
         {
             name: 'about',
             path: '/about',
-            components: {router_header: TheHeader, router_content: PageAbout, router_footer: TheFooter}
+            components: {router_header: TheHeader, router_content: PageAbout}
         },
         {
             name: 'contact',
             path: '/contact',
-            components: {router_header: TheHeader, router_content: PageContact, router_footer: TheFooter}
+            components: {router_header: TheHeader, router_content: PageContact}
         },
         {path: '/:notFound(.*)', redirect: '/'},
     ],

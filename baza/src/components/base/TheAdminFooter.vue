@@ -16,7 +16,6 @@ export default {
 .footer {
   position: relative;
   bottom: 0;
-  width: 100vw;
   height: $footer-height;
   background-color: $bckg-solid;
 }

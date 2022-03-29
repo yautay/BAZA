@@ -4,18 +4,20 @@
   <base-content>
     <router-view name="router_content"></router-view>
   </base-content>
-  <router-view name="router_footer"></router-view>
+  <the-footer></the-footer>
 </template>
 
 <script>
 import TheBackground from "@/components/base/TheBackground";
 import BaseContent from "@/components/base/BaseContent";
+import TheFooter from "@/components/base/TheFooter";
 
 export default {
   name: 'App',
   components: {
     'the-background': TheBackground,
-    'base-content': BaseContent
+    'base-content': BaseContent,
+    'the-footer': TheFooter
   }
 
 }

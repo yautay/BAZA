@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer">
+  <footer class="footer">
     <div class="container-content">
       <the-socialmedia class="footer socialmedia visible"></the-socialmedia>
       <the-copyright class="footer copywright visible"></the-copyright>
@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 
-#footer {
+.footer {
   position: relative;
   bottom: 0;
   width: 100vw;

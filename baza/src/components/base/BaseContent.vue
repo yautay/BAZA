@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <slot><p>CONTENT</p></slot>
+  <main class="main-container">
+    <slot><p>EMPTY SLOT!!!</p></slot>
   </main>
 </template>
 
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
-main {
+.main-container {
   position: relative;
   margin: auto;
   top: $header-height;

@@ -1,17 +1,17 @@
 <template>
-  <section class="page">
-    <p>START</p>
+  <section class="admin">
+    <p>ADMIN PAGE</p>
   </section>
 </template>
 
 <script>
 export default {
-  name: "PageAbout"
+  name: "PageAdmin"
 }
 </script>
 
 <style scoped>
-.page {
+.admin {
   height: 1500px;
   background-color: rgba(107, 66, 255, 0.34);
 }

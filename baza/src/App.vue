@@ -1,23 +1,19 @@
 <template>
   <the-background></the-background>
-  <the-header></the-header>
+  <router-view name="router_header"></router-view>
   <base-content>
-    <router-view></router-view>
+    <router-view name="router_content"></router-view>
   </base-content>
-  <the-footer></the-footer>
+  <router-view name="router_footer"></router-view>
 </template>
 
 <script>
 import TheBackground from "@/components/base/TheBackground";
-import TheHeader from "@/components/base/TheHeader";
 import BaseContent from "@/components/base/BaseContent";
-import TheFooter from "@/components/base/TheFooter";
 
 export default {
   name: 'App',
   components: {
-    'the-header': TheHeader,
-    'the-footer': TheFooter,
     'the-background': TheBackground,
     'base-content': BaseContent
   }
@@ -44,7 +40,6 @@ html {
     font-family: "Roboto", sans-serif;
     background-color: #fff9f4;
     font-size: 10px;
-
   }
 }
 </style>

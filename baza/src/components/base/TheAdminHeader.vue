@@ -1,17 +1,12 @@
 <template>
   <header class="header">
-    <the-navigation></the-navigation>
+    <h2>ADMIN HEADER</h2>
   </header>
 </template>
 
 <script>
-import TheNavigation from "@/components/base/nav/TheNavigation";
-
 export default {
   name: 'TheHeader',
-  components: {
-    'the-navigation': TheNavigation
-  }
 }
 </script>
 

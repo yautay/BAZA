@@ -28,7 +28,6 @@ export default {
 .footer {
   position: relative;
   bottom: 0;
-  width: 100vw;
   height: $footer-height;
   background-color: $bckg-solid;
 
@@ -54,7 +53,7 @@ export default {
     }
 
     .footer {
-      flex: 1 195px;
+      flex: 1 190px;
       text-align: center;
       font-size: 1.3rem;
     }
